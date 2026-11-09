@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCF with planted WACC and TV faults — Erik Shaw</title>
+  <meta name="description" content="Anonymized DCF evaluation case with deliberate terminal value and WACC inconsistencies, tested against 20 model outputs.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">
+        <span class="monogram">ES</span>
+        <span class="brand-name">Erik Shaw</span>
+      </a>
+      <nav>
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#expertise">Expertise</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <a class="back" href="../index.html#work">← Selected work</a>
+        <p class="eyebrow" style="margin-top:22px">Case 02 · DCF · Valuation</p>
+        <h1>A DCF that was wrong on purpose.</h1>
+        <p class="lede">I authored a valuation case in which terminal value and WACC could not both be true at the same time. The task was not to produce a pretty football field. It was to notice the break, correct it, and show the arithmetic.</p>
+        <div class="meta-grid">
+          <div><span>Domain</span><b>DCF valuation</b></div>
+          <div><span>Planted faults</span><b>WACC and terminal value</b></div>
+          <div><span>Outputs tested</span><b>20</b></div>
+          <div><span>What it measured</span><b>Assumption validation</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap prose">
+        <h2>The trap</h2>
+        <p>The operating forecast, beta, capital structure, and long-run growth rate were each defensible in isolation. Combined, they were not. Long-run growth sat too close to WACC, or WACC was built from a target structure that the forecast never converged to. Exit-multiple terminal value also implied a growth/return pair that contradicted the Gordon growth value printed a few rows above it.</p>
+        <p>I documented the expected corrections in the gold-standard memo: which input to reopen first, what a consistent WACC stack looked like, and how to reconcile implied perpetuity growth from an exit multiple back to the explicit forecast.</p>
+
+        <h2>Scoring</h2>
+        <p>Weighted criteria favored detection over polish. A model that copied the case’s WACC and produced an enterprise value without comment failed, even if the spreadsheet was tidy. Partial credit went to outputs that flagged the inconsistency but used the wrong fix — for example, lowering g without revisiting the cost of equity, or switching to an exit multiple that reintroduced the same problem in different clothing.</p>
+        <p>Full credit required a corrected valuation, a short explanation of why the original assumptions could not stand, and a sensitivity that showed value under the repaired range rather than the planted one.</p>
+
+        <h2>What failed</h2>
+        <div class="failure-list">
+          <div>
+            <strong>Multi-step reasoning dropped at the seam.</strong>
+            <p class="muted" style="margin:0">Models would build a clean explicit period and then accept a terminal value that did not belong to that period’s economics.</p>
+          </div>
+          <div>
+            <strong>WACC as a slogan.</strong>
+            <p class="muted" style="margin:0">Cost of capital was restated from the prompt instead of rebuilt from beta, tax, and the capital structure the forecast actually used.</p>
+          </div>
+          <div>
+            <strong>No check against filings.</strong>
+            <p class="muted" style="margin:0">Where the case pointed at segment notes or net-debt detail, several outputs preferred the management narrative over the number in the filing.</p>
+          </div>
+        </div>
+
+        <h2>Use</h2>
+        <p>Tested against 20 model outputs, the case consistently surfaced failures in assumption validation. It is the evaluation I reach for when someone says a model “can do DCF.” Doing DCF is easy. Noticing that the terminal value is lying is the job.</p>
+        <p><a href="lbo.html">← Previous case</a> · <a href="fpa.html">Next case: FP&amp;A variance →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Erik Shaw</span>
+      <p class="socials">
+        <a href="mailto:erikshaw5487@gmail.com">Email</a>
+        <a href="https://github.com/erikshaw5487-cell" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/erik-shaw-37536144a/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

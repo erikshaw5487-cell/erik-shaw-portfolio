@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take-private LBO gold standard — Erik Shaw</title>
+  <meta name="description" content="Anonymized LBO evaluation case: debt schedule, returns sensitivity, covenant checks, and a 90%+ acceptance threshold across 25 model outputs.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">
+        <span class="monogram">ES</span>
+        <span class="brand-name">Erik Shaw</span>
+      </a>
+      <nav>
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#expertise">Expertise</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <a class="back" href="../index.html#work">← Selected work</a>
+        <p class="eyebrow" style="margin-top:22px">Case 01 · LBO · Take-private</p>
+        <h1>Gold-standard LBO for a take-private evaluation.</h1>
+        <p class="lede">A closed-book reference solution used to score AI-generated LBOs. The case required a complete sources-and-uses build, a debt schedule that actually rolled, returns that survived a downside case, and covenant tests that were not decorative.</p>
+        <div class="meta-grid">
+          <div><span>Domain</span><b>LBO / take-private</b></div>
+          <div><span>Artifacts</span><b>Model, filings, memo</b></div>
+          <div><span>Outputs tested</span><b>25</b></div>
+          <div><span>Pass threshold</span><b>90% rubric score</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap prose">
+        <h2>What had to be true</h2>
+        <p>The prompt looked like a standard take-private: sponsor equity, a mix of term loan and notes, a refinancing at exit, and a management case that was optimistic on margin. A correct solution could not stop at IRR. It had to keep the balance sheet in balance after every period, pay cash interest only where the documents allowed, and show what happened to coverage if EBITDA missed the case.</p>
+        <p>I built the gold-standard model with a full debt schedule, returns sensitivity (entry multiple, exit multiple, and EBITDA), and covenant checks against the credit package implied by the materials. The write-up documented which cells were mechanical, which were judgment, and which errors were disqualifying.</p>
+
+        <h2>How it was scored</h2>
+        <p>The rubric was weighted toward mechanics that finance reviewers actually argue about. Structure and sources-and-uses were required but not sufficient. Most of the weight sat on debt roll-forwards, cash sweep logic, circularity handling, and whether terminal / exit value was consistent with the operating case the model had just produced.</p>
+        <p>Acceptance required a rubric score of 90% or higher. Outputs that produced a plausible IRR from an internally inconsistent schedule did not pass. Five reviewers used this file as a reference when scoring later work.</p>
+
+        <h2>What the models missed</h2>
+        <div class="failure-list">
+          <div>
+            <strong>Debt schedule roll-forwards.</strong>
+            <p class="muted" style="margin:0">Beginning balance, draws, mandatory amortization, optional prepay, and ending balance failed to reconcile once cash sweep and PIK toggles entered the case.</p>
+          </div>
+          <div>
+            <strong>Terminal and exit assumptions.</strong>
+            <p class="muted" style="margin:0">Exit enterprise value was often implied from a multiple that did not match the year-of-exit EBITDA the model itself had forecast, or that ignored net debt at exit.</p>
+          </div>
+          <div>
+            <strong>Covenant theatre.</strong>
+            <p class="muted" style="margin:0">Several outputs printed leverage and coverage ratios without using the defined EBITDA or net-debt figures from the credit materials.</p>
+          </div>
+        </div>
+
+        <h2>Why it stayed in the set</h2>
+        <p>It reliably separated models that can format an LBO from models that can keep a capital structure honest for five years. That is the distinction I care about in evaluation work: not whether the IRR looks familiar, but whether the schedule would survive a credit meeting.</p>
+        <p><a href="dcf.html">Next case: planted DCF faults →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Erik Shaw</span>
+      <p class="socials">
+        <a href="mailto:erikshaw5487@gmail.com">Email</a>
+        <a href="https://github.com/erikshaw5487-cell" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/erik-shaw-37536144a/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
