@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erik Shaw — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: letter;
+      margin: 0.38in 0.48in 0.36in;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #1a1c1f;
+      font-family: "Source Sans 3", "Calibri", "Segoe UI", sans-serif;
+      font-size: 9.45pt;
+      line-height: 1.24;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.4in 0.5in;
+    }
+
+    @media print {
+      .page { padding: 0; max-width: none; }
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 1.5pt solid #c9a96e;
+      padding-bottom: 7px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 26pt;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      margin: 0 0 2px;
+      color: #12141a;
+      line-height: 1;
+    }
+
+    .headline {
+      font-size: 8.7pt;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #3a3f4a;
+      margin: 4px 0 5px;
+    }
+
+    .contact {
+      font-size: 8.3pt;
+      color: #333;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .contact a {
+      color: #1a1c1f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .sep { color: #c9a96e; padding: 0 5px; }
+
+    h2 {
+      font-size: 8.5pt;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #12141a;
+      border-bottom: 0.65pt solid #12141a;
+      margin: 8px 0 4px;
+      padding-bottom: 1px;
+    }
+
+    .summary { margin: 0; text-align: justify; }
+
+    .job { margin-bottom: 5px; }
+
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .job-org { font-weight: 700; }
+    .job-title { font-weight: 600; }
+
+    .job-meta {
+      font-size: 8.6pt;
+      color: #444;
+      white-space: nowrap;
+    }
+
+    .job-sub {
+      font-size: 8.7pt;
+      color: #444;
+      font-style: italic;
+      margin: 0;
+    }
+
+    ul {
+      margin: 1px 0 0;
+      padding-left: 14px;
+    }
+
+    li { margin-bottom: 1px; }
+
+    .work p {
+      margin: 0 0 2.5px;
+    }
+
+    .inline-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: baseline;
+    }
+
+    .muted { color: #444; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>ERIK SHAW</h1>
+      <p class="headline">Investment Banking &amp; Private Equity Specialist &nbsp;|&nbsp; Financial AI Evaluation &nbsp;|&nbsp; CFA, FRM</p>
+      <p class="contact">
+        Vancouver, BC
+        <span class="sep">·</span>
+        <a href="mailto:erikshaw5487@gmail.com">erikshaw5487@gmail.com</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/erik-shaw-37536144a/">linkedin.com/in/erik-shaw-37536144a</a><br>
+        <a href="https://github.com/erikshaw5487-cell">github.com/erikshaw5487-cell</a>
+        <span class="sep">·</span>
+        <a href="https://erikshaw5487-cell.github.io/erik-shaw-portfolio/">erikshaw5487-cell.github.io/erik-shaw-portfolio</a>
+      </p>
+    </header>
+
+    <h2>Professional Summary</h2>
+    <p class="summary">CFA charterholder and FRM with six years in investment banking, private equity, and corporate FP&amp;A, now designing and evaluating AI reasoning on complex financial problems. Combines DCF and LBO modeling with multi-document evaluation cases, gold-standard solutions, and weighted scoring rubrics across M&amp;A, valuation, accounting, and corporate forecasting.</p>
+
+    <h2>Professional Experience</h2>
+
+    <article class="job">
+      <div class="job-head">
+        <div><span class="job-org">Appen</span> — <span class="job-title">Finance AI Trainer</span></div>
+        <div class="job-meta">Remote &nbsp;|&nbsp; 2024–Present</div>
+      </div>
+      <ul>
+        <li>Independently designed 12 multi-document financial evaluation cases spanning M&amp;A, LBO, DCF, and accounting treatment, requiring multi-step reasoning across SEC filings, spreadsheets, and written analysis.</li>
+        <li>Wrote gold-standard reference solutions and weighted scoring rubrics, including expected corrections for planted errors.</li>
+        <li>Evaluated 550+ AI-generated financial analyses over eight months; recurring failures included terminal value, debt-schedule roll-forwards, unsupported margin expansion, and revenue recognition.</li>
+        <li>Built a 40-question internal evaluation set, tested it against 25 model outputs, and raised inter-rater agreement above 85%; standards adopted by a team of eight reviewers.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <div><span class="job-org">Teck Resources</span> — <span class="job-title">FP&amp;A Manager, Corporate</span></div>
+        <div class="job-meta">Vancouver, BC &nbsp;|&nbsp; 2022–2024</div>
+      </div>
+      <ul>
+        <li>Led annual budgeting and quarterly forecasting for three business units supporting more than $2 billion in revenue.</li>
+        <li>Implemented a reporting framework that improved forecast accuracy by 16% within two quarters, measured on EBITDA variance versus actuals.</li>
+        <li>Automated forecasting and variance reporting in Python and Power BI, reducing manual preparation by roughly 20 hours per month.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <div><span class="job-org">ARC Financial</span> — <span class="job-title">Private Equity Associate</span></div>
+        <div class="job-meta">Calgary, AB &nbsp;|&nbsp; 2020–2022</div>
+      </div>
+      <ul>
+        <li>Led financial due diligence on acquisition targets: historical models, cash-flow quality, working capital, and growth assumptions.</li>
+        <li>Built LBO models for returns, capital structure, and downside cases on platform and add-on opportunities.</li>
+        <li>Evaluated 110+ potential investments, supported two completed add-ons, and prepared IC materials; defended assumptions in committee.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <div><span class="job-org">TD Securities</span> — <span class="job-title">Investment Banking Analyst, Energy &amp; Power</span></div>
+        <div class="job-meta">Calgary, AB &nbsp;|&nbsp; 2018–2020</div>
+      </div>
+      <ul>
+        <li>Built three-statement models, DCFs, LBOs, and comparable company analyses for M&amp;A and capital-raising mandates.</li>
+        <li>Supported execution on more than $2.5 billion of transactions, including cross-border energy infrastructure and power generation deals.</li>
+        <li>Prepared pitch materials, valuation summaries, and accretion/dilution analysis; coordinated diligence and data-room reviews.</li>
+      </ul>
+    </article>
+
+    <h2>Selected Financial &amp; AI Evaluation Work</h2>
+    <div class="work">
+      <p><strong>Take-private LBO gold standard.</strong> Full debt schedule, returns sensitivity, and covenant checks. Tested against 25 AI outputs at a 90%+ pass threshold; adopted as a reference by five reviewers.</p>
+      <p><strong>DCF case with planted WACC and terminal-value faults.</strong> Authored the case, expected corrections, and scoring rubric. Tested against 20 outputs; consistently caught multi-step reasoning failures.</p>
+      <p><strong>FP&amp;A variance-analysis case.</strong> Reconciles segment revenue, FX, and budget-to-actual drivers across statements and management commentary. Calibrated with three reviewers; now in the standard set.</p>
+    </div>
+
+    <h2>Education &amp; Certifications</h2>
+    <div class="inline-row">
+      <div>
+        <span class="job-org">University of British Columbia</span> — BCom, Finance
+      </div>
+      <div class="job-meta">Vancouver, BC &nbsp;|&nbsp; 2018</div>
+    </div>
+    <p style="margin:3px 0 0;">
+      CFA Institute — Chartered Financial Analyst, 2021 &nbsp;·&nbsp; GARP — Financial Risk Manager, 2022<br>
+      University of Toronto — Financial Technology Graduate Certificate, 2023 &nbsp;·&nbsp; CFI — Data Analysis for Finance, 2022 &nbsp;·&nbsp; Wharton Online — AI for Business Professionals, 2023
+    </p>
+
+    <h2>Skills</h2>
+    <p style="margin:0;">
+      <strong>Modeling:</strong> three-statement, DCF, LBO, comps, precedents, accretion/dilution, model audit, IC memos &nbsp;·&nbsp;
+      <strong>FP&amp;A:</strong> driver-based forecasting, variance analysis, capital-project evaluation, GAAP/IFRS &nbsp;·&nbsp;
+      <strong>AI evaluation:</strong> multi-document case design, gold-standard solutions, rubrics, error taxonomies, reviewer calibration, SEC verification &nbsp;·&nbsp;
+      <strong>Tools:</strong> Excel, PowerPoint, Python (pandas, openpyxl), Power BI &nbsp;·&nbsp;
+      <strong>Languages:</strong> English, Mandarin
+    </p>
+  </div>
+</body>
+</html>
